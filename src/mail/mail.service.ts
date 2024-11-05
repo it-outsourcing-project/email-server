@@ -19,12 +19,11 @@ export class MailService {
   });
 
   async sendEmail(createMailDto: CreateMailDto) {
-    const { name, surname, email, phone, message } = createMailDto;
+    const { name, email, phone, message } = createMailDto;
 
     const emailHtml = render(
       Email({
         name,
-        surname,
         email,
         phone,
         message,

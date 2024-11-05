@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  mail_server:
+    container_name: mail_server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    restart: always

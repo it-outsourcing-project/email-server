@@ -20,7 +20,7 @@ function formatter(date) {
   }).format(date);
 }
 
-export default function Email({ name, surname, email, phone, message }) {
+export default function Email({ name, email, phone, message }) {
   return (
     <Tailwind
       config={{
@@ -53,20 +53,20 @@ export default function Email({ name, surname, email, phone, message }) {
 
             <Row className="border-b border-neutral-300">
               <Column className="font-bold text-neutral-400 text-center">
-                Фамилия
-              </Column>
-            </Row>
-            <Row className="border-b border-neutral-300">
-              <Column className="text-black text-center">{surname}</Column>
-            </Row>
-
-            <Row className="border-b border-neutral-300">
-              <Column className="font-bold text-neutral-400 text-center">
                 Номер телефона
               </Column>
             </Row>
             <Row className="border-b border-neutral-300">
               <Column className="text-black text-center">{phone}</Column>
+            </Row>
+
+            <Row className="border-b border-neutral-300">
+              <Column className="font-bold text-neutral-400 text-center">
+                Email
+              </Column>
+            </Row>
+            <Row className="border-b border-neutral-300">
+              <Column className="text-black text-center">{email}</Column>
             </Row>
 
             <Row className="border-b border-neutral-300">

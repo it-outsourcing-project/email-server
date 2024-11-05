@@ -21,7 +21,7 @@ async function bootstrap() {
     .setVersion('1.0')
     .build();
 
-  app.setGlobalPrefix('api/v1');
+  app.setGlobalPrefix('api');
 
   const document = SwaggerModule.createDocument(app, config);
   if (process.env.PORT_SERVER === 'development') {

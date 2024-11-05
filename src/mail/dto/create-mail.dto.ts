@@ -10,10 +10,6 @@ export const createMailSechema = z.object({
     .refine((val: string) => val !== ' ', {
       message: 'Имя не должно содержать пустых символов',
     }),
-  surname: z
-    .string()
-    .max(20, { message: 'Фамилия не может быть таким большим' })
-    .trim(),
   email: z
     .string()
     .trim()
